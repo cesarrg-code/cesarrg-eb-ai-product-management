@@ -144,8 +144,14 @@
     }
 
     /* Slide 6: Comparison table */
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
     .compare-table {
       width: 100%;
+      min-width: 520px;
       border-collapse: separate;
       border-spacing: 0 12px;
       margin-top: 20px;
@@ -327,6 +333,7 @@
   <section class="slide" id="slide-6">
     <div class="content">
       <h2 style="margin-bottom: 20px;"><span class="bold">Mental model changes</span></h2>
+      <div class="table-scroll">
       <table class="compare-table">
         <thead>
           <tr>
@@ -375,6 +382,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
     <div class="footer"><a href="https://cesarrg.com">cesarrg.com</a></div>
   </section>
